@@ -296,7 +296,7 @@ const ProductDetails = () => {
         <Text variant="secondary" className="text-base sm:text-2xl font-medium">
           Related Products
         </Text>
-        <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-3">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-3">
           {Array.from({ length: 4 }).map((_, index) => (
             <PrimaryCard key={index} />
           ))}
@@ -307,7 +307,7 @@ const ProductDetails = () => {
         <Text variant="secondary" className="text-base sm:text-2xl font-medium">
           People Also Bought
         </Text>
-        <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-3">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-3">
           {Array.from({ length: 4 }).map((_, index) => (
             <PrimaryCard key={index} />
           ))}

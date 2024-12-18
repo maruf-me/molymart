@@ -21,15 +21,18 @@ export type ProductDef = {
 const PrimaryCard = ({ product }: { product?: ProductDef }) => {
   return (
     <div className="group">
-      <div className="bg-dark-20 max-h-[152px] sm:max-h-[320px] relative overflow-hidden">
-        <Image
-          alt=""
-          height={0}
-          width={0}
-          sizes="100vw"
-          src={product?.img ? product.img : "/images/product.svg"}
-          className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-300 ease-in"
-        />
+      <div className="bg-dark-20 max-h-[172px] sm:max-h-[320px] relative overflow-hidden">
+        <div className="relative w-full" style={{ paddingTop: '75%' }}>
+          {/* 75% padding creates a 4:3 aspect ratio */}
+          <Image
+            alt=""
+            height={0}
+            width={0}
+            sizes="100vw"
+            src={product?.img ? product.img : "/images/product.svg"}
+            className="absolute top-0 left-0 w-full h-full object-contain group-hover:scale-110 transition-transform duration-300 ease-in"
+          />
+        </div>
 
         <Text
           title={product?.top ? product.top : "New Arrival"}
