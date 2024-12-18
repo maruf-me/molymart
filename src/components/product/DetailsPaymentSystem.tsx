@@ -67,7 +67,7 @@ const DetailsPaymentSystem = () => {
           height={0}
           sizes="100vw"
           src="/images/payments.svg"
-          className="max-h-[28px] max-w-[360px] h-full w-full object-contain"
+          className="max-h-[28px] lg:max-w-[360px] h-full w-full object-contain"
         />
       </div>
     </div>
